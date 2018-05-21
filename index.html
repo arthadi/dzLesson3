@@ -5,55 +5,69 @@
     <title>lesson2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="сss/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!--<script defer src=""></script>-->
 </head>
 <body>
 <!--Хедер-->
 <header class="header">
-    <div class="header__contetent">
 <!--Верхнее меню-->
-        <div class="header__nav__top">
-            <nav class="header__nav">
-                <a class="header__link link" href="#">
-                    <img class="header__icon img" src="img/iconEnter.svg" alt="иконка вход"/>Вход
-                </a>
-                <a class="header__link link" href="#">
-                    <img class="header__icon img" src="img/iconFavourites.svg" alt="иконка избранное"/>Избранное
-                </a>
-                <a class="header__link link" href="#">
-                    <img class="header__icon img" src="img/iconСompare.svg" alt="иконка сравнение"/>Сравнение
-                </a>
-            </nav>
-            <nav class="header__nav header_nav_social_network">
-                <a class="header__link link" href="#">
-                    <img class="header__icon img" src="img/iconVk.svg" alt="иконка вк"/>
-                </a>
-                <a class="header__link link" href="#">
-                    <img class="header__icon img" src="img/iconFacebook.svg" alt="иконка файсбук"/>
-                </a>
-                <a class="header__link link" href="#">
-                    <img class="header__icon img" src="img/iconTwitter.svg" alt="иконка твиттер"/>
-                </a>
-            </nav>
+        <div class="header-nav__top">
+            <ul class="header-action">
+                <li class="header-action__item">
+                    <a class="header-link link" href="#">
+                        <img class="header__icon img" src="img/iconEnter.svg" alt="иконка вход"/>Вход
+                    </a>
+                </li>
+                <li class="header-action__item">
+                    <a class="header-link link" href="#">
+                        <img class="header__icon img" src="img/iconFavourites.svg" alt="иконка избранное"/>Избранное
+                    </a>
+                </li>
+                <li class="header-action__item">
+                    <a class="header-link link" href="#">
+                        <img class="header__icon img" src="img/iconСompare.svg" alt="иконка сравнение"/>Сравнение
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-network">
+                <li class="social-network__item">
+                    <a class="social-network__link link" href="#">
+                        <img class="header__icon img" src="img/iconVk.svg" alt="иконка вк"/>
+                    </a>
+                </li>
+                <li class="social-network__item">
+                    <a class="social-network__link link" href="#">
+                        <img class="header__icon img" src="img/iconFacebook.svg" alt="иконка файсбук"/>
+                    </a>
+                </li>
+                <li class="social-network__item">
+                    <a class="social-network__link link" href="#">
+                        <img class="header__icon img" src="img/iconTwitter.svg" alt="иконка твиттер"/>
+                    </a>
+                </li>
+            </ul>
         </div>
 <!--Основной контент хедера-->
-        <div class="header__main__content">
-            <div class="logo">
+        <div class="header-main">
+            <div class="header-main__logo">
                 <a class="logo__link link" href="index.html">
                     <img class="logo__link__img img" src="img/mainLogo.svg" alt="логотип компании"/>
                 </a>
             </div>
-            <div class="connection__search">
-                <div class="header__connection">
-                    <address class="header__tel">
-                        <img class="connection__icon img" src="img/iconTel.svg" alt="иконка телефон"/>8(800) 684-55-94
+            <div class="header-main__connect__search">
+                <div class="header-main-connect">
+                    <address class="header-main-connect__tel">
+                        <img class="header-main-connection__tel__icon img" src="img/iconTel.svg" alt="иконка телефон"/>
+                        <a class="header-main__link link" href="#">8(800)684-55-94</a>
                     </address>
-                    <address class="header__email">
-                        <img class="connection__icon img" src="img/iconEmail.svg" alt="иконка e-mail"/>info@nalabuten.ah
+                    <address class="header-main-connect__email">
+                        <img class="header-main-connect__email__icon img" src="img/iconEmail.svg" alt="иконка e-mail"/>
+                        <a class="header-main__link link" href="#">info@nalabuten.ah</a>
                     </address>
                 </div>
-                <form class="connection__search__form search__form" method="post">
+                <form class="header-main__search" method="get">
                     <input class="search__input form__input" type="search" name="search" placeholder="Введите поисковую фразу">
                     <button class="search__button form__button" type="submit">
                         <img class="button__search__img img" src="img/iconLoupe" alt="иконка лупа"/>
@@ -61,399 +75,360 @@
                 </form>
             </div>
             <div class="basket">
-                <div class="basket__content">
-                    <p class="basket__cost">7 500 p.</p>
-                    <div class="basket__icon">
-                        <p class="basket__count">2</p>
-                        <a class="basket__link link" href="basket.html">
-                            <img class="basket__pict img" src="iconBasket.svg" alt="иконка корзины">
-                        </a>
-                    </div>
+                <p class="basket__cost">7 500 p.</p>
+                <div class="basket__button">
+                    <p class="basket__count">2</p>
+                    <a class="basket__link link" href="basket.html">
+                        <img class="basket__pict img" src="iconBasket.svg" alt="иконка корзины">
+                    </a>
                 </div>
             </div>
         </div>
 <!--Главное меню-->
-        <nav class="main__menu">
+        <nav class="header__main__menu">
             <ul class="menu__main menu">
-                <li class="menu__tab">
+                <li class="menu__main__tab">
                     <a class="menu__item link" href="index.html">Главная</a>
                 </li>
-                <li class="menu__tab">
+                <li class="menu__main__tab">
                     <a class="menu__item link" href="catalogue.html">Каталог</a>
                 </li>
-                <li class="menu__tab">
+                <li class="menu__main__tab">
                     <a class="menu__item link" href="gallery.html">Галерея</a>
                 </li>
-                <li class="menu__tab">
+                <li class="menu__main__tab">
                     <a class="menu__item link" href="stock.html">Акции</a>
                 </li>
-                <li class="menu__tab">
+                <li class="menu__main__tab">
                     <a class="menu__item link" href="contacts.html">Контакты</a>
                 </li>
             </ul>
         </nav>
-    </div>
 </header>
-<div class="main">
-    <div class="content">
-<!--Левая колонка-->
-        <aside class="aside__main">
-            <nav class="aside__main__menu">
-                <ul class="aside__ menu menu">
-                    <li class="menu__tab">
-                        <p class="menu__item">Категории</p>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconEvening.svg" alt="иконка вечерние">Вечерние
-                        </a>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconMarriage.svg" alt="иконка свадебные">Свадебные
-                        </a>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconDancing.svg" alt="иконка бальные">Бальные
-                        </a>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconEveryday.svg"
-                                 alt="иконка повседневные">Повседневные
-                        </a>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconSpecial.svg" alt="иконка особенные">Особенные
-                        </a>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconOrdinary.svg"
-                                 alt="иконка обыкновенный">Обыкновенные
-                        </a>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconOriginal.svg"
-                                 alt="иконка оригинальный">Оригинальные
-                        </a>
-                    </li>
-                    <li class="menu__tab">
-                        <a class="aside__menu__item link" href="catalogue.html">
-                            <img class="icon__menu__aside img" src="iconStar.svg" alt="иконка космический">Космические
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="aside__baner">
-                <img class="img" src="img/top_20.jpg" alt="топ 20">
-                <img class="img" src="img/top_reclama.jpg" alt="топ">
-            </div>
-        </aside>
-<!--Основной контент-->
-        <main class="main__content">
+<div class="main__content">
+    <main class="main">
 <!--Слайдер-->
-            <div class="main__slider">
-                <div class="main__slider__inner">
-                    <div class="arrow__left slider__arrow">
-                        <img class="slaider__button img" src="img/slider/arrowLeft.svg" alt="левая кнопка"/>
+        <div class="main__slider">
+            <div class="main__slider__inner">
+                <div class="arrow__left slider__arrow">
+                    <img class="slaider__button img" src="img/slider/arrowLeft.svg" alt="левая кнопка"/>
+                </div>
+                <div class="arrow__right slider__arrow">
+                    <img class="slaider__button img" src="img/slider/arrowRight.svg" alt="правая кнопка"/>
+                </div>
+                <div class="slide">
+                    <img class="pict__shoes img" src="img/slider/shoes1.jpg" alt="туфли черные"/>
+                    <div class="slide__headline">
+                        <h2 class="slide__headline">Labuten Cherry</h2>
+                        <h3 class="slide__headline__subtitle">Новая весенняяя коллекция</h3>
+                        <p class="slide__headline__text">Мы рады предоставить вам новую коллекцию туфель от
+                            знаменитого дизайнера-модельера Кристиана</p>
                     </div>
-                    <div class="arrow__right slider__arrow">
-                        <img class="slaider__button img" src="img/slider/arrowRight.svg" alt="правая кнопка"/>
-                    </div>
-                    <div class="slide">
-                        <img class="pict__shoes img" src="img/slider/shoes1.jpg" alt="туфли черные"/>
-                        <div class="slide__headline">
-                            <h2 class="slide__headline">Labuten Cherry</h2>
-                            <h3 class="slide__headline__subtitle">Новая весенняяя коллекция</h3>
-                            <p class="slide__headline__text">Мы рады предоставить вам новую коллекцию туфель от
-                                знаменитого дизайнера-модельера Кристиана</p>
-                        </div>
-                        <form class="form" method="post">
-                            <button class="slide__button form__button" type="submit">купить сейчас</button>
-                        </form>
-                    </div>
+                    <form class="form" method="post">
+                        <button class="slide__button form__button" type="submit">купить сейчас</button>
+                    </form>
                 </div>
             </div>
+        </div>
 <!--Предложения  -->
-            <ul class="proposals__content">
-                <li class="proposals__item">
-                    <a class="proposals__link link" href="galery.html">
-                        <section class="section">
-                            <img class="proposals__icon__sale img" src="img/iconSale.svg" alt="иконка карты"/>
-                            <h3 class="proposals__title">Продажа</h3>
-                        </section>
-                        <h6 class="proposals__text">Широкий ассортимент моделей</h6>
+        <ul class="proposals__content">
+            <li class="proposals__item">
+                <a class="proposals__link link" href="galery.html">
+                    <div class="proposals__title">
+                        <img class="proposals__icon__sale img" src="img/iconSale.svg" alt="иконка карты"/>
+                        <h3 class="proposals__title">Продажа</h3>
+                    </div>
+                    <h6 class="proposals__text">Широкий ассортимент моделей</h6>
+                </a>
+            </li>
+            <li class="proposals__item">
+                <a class="proposals__link link" href="stock.html">
+                    <div class="section">
+                        <img class="proposals__icon__discounts img" src="img/iconGood.svg" alt="иконка good"/>
+                        <h3 class="proposals__title">Скидки</h3>
+                    </div>
+                    <h6 class="proposals__text">Невообразимо низкие цены</h6>
+                </a>
+            </li>
+            <li class="proposals__item">
+                <a class="proposals__link link" href="stock.html">
+                    <div class="section">
+                        <img class="proposals__icon__stock img" src="img/iconBox.svg" alt="иконка коробка"/>
+                        <h3 class="proposals__title">Продажа</h3>
+                    </div>
+                    <h6 class="proposals__text">Широкий ассортимент моделей</h6>
+                </a>
+            </li>
+        </ul>
+<!--раздел Новинки-->
+        <section class="section__new section">
+            <div class="section__new__headline">
+                <h2 class="section__headline">Новинки</h2>
+            </div>
+<!--товары-->
+            <article class="section__item">
+                <span class="label">new</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+            <article class="section__item">
+                <span class="label">new</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+            <article class="section__item">
+                <span class="label">new</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+            <article class="section__item">
+                <span class="label">new</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+        </section>
+<!--раздел Товары со скидкой-->
+        <section class="section__discounts section">
+            <div class="section__discounts__headline">
+                <h2 class="section__headline">Товары со скидкой</h2>
+            </div>
+<!--товары-->
+            <article class="section__item__discounts section__item">
+                <span class="label">-10%</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+            <article class="section__item__discounts section__item">
+                <span class="label">-10%</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+            <article class="section__item__discounts section__item">
+                <span class="label">-10%</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+            <article class="section__item__discounts section__item">
+                <span class="label">-10%</span>
+                <a class="section__item__link link" href="#">
+                    <img class="section__pict img" src="shoes.jpg" alt="туфли">
+                </a>
+                <h5 class="item__title">Labuten-lady</h5>
+                <p class="item__cost">35 000 р.</p>
+                <form class="form" method="post">
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
+                    </button>
+                    <button class="basket__button form__button" type="submit">
+                        <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
+                    </button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <!--Левая колонка-->
+    <aside class="aside">
+        <nav class="aside__main__menu">
+            <h3 class="aside__ menu__title">Категории</h3>
+            <ul class="aside__ menu menu">
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconEvening.svg" alt="иконка вечерние">
+                        Вечерние
                     </a>
                 </li>
-                <li class="proposals__item">
-                    <a class="proposals__link link" href="stock.html">
-                        <section class="section">
-                            <img class="proposals__icon__discounts img" src="img/iconGood.svg" alt="иконка good"/>
-                            <h3 class="proposals__title">Скидки</h3>
-                        </section>
-                        <h6 class="proposals__text">Невообразимо низкие цены</h6>
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconMarriage.svg" alt="иконка свадебные">
+                        Свадебные
                     </a>
                 </li>
-                <li class="proposals__item">
-                    <a class="proposals__link link" href="stock.html">
-                        <section class="section">
-                            <img class="proposals__icon__stock img" src="img/iconBox.svg" alt="иконка коробка"/>
-                            <h3 class="proposals__title">Продажа</h3>
-                        </section>
-                        <h6 class="proposals__text">Широкий ассортимент моделей</h6>
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconDancing.svg" alt="иконка бальные">
+                        Бальные
+                    </a>
+                </li>
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconEveryday.svg" alt="иконка повседневные">
+                        Повседневные
+                    </a>
+                </li>
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconSpecial.svg" alt="иконка особенные">
+                        Особенные
+                    </a>
+                </li>
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconOrdinary.svg" alt="иконка обыкновенный">
+                        Обыкновенные
+                    </a>
+                </li>
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconOriginal.svg" alt="иконка оригинальный">
+                        Оригинальные
+                    </a>
+                </li>
+                <li class="aside__menu__item menu__tab">
+                    <a class="aside__menu__link link" href="catalogue.html">
+                        <img class="aside__icon__menu img" src="iconStar.svg" alt="иконка космический">
+                        Космические
                     </a>
                 </li>
             </ul>
-<!--раздел Новинки-->
-            <div class="section__new section">
-                <div class="section__new__headline">
-                    <h2 class="section__headline">Новинки</h2>
-                </div>
-<!--товары-->
-                <div class="section__item">
-                    <div class="label">
-                        <p class="label__text">new</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-                <div class="section__item">
-                    <div class="label">
-                        <p class="label__text">new</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-                <div class="section__item">
-                    <div class="label">
-                        <p class="label__text">new</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-                <div class="section__item">
-                    <div class="label">
-                        <p class="label__text">new</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-            </div>
-<!--раздел Товары со скидкой-->
-            <div class="section__discounts section">
-                <div class="section__discounts__headline">
-                    <h2 class="section__headline">Товары со скидкой</h2>
-                </div>
-<!--товары-->
-                <div class="section__item__discounts section__item">
-                    <div class="label">
-                        <p class="label__text">-10%</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-                <div class="section__item__discounts section__item">
-                    <div class="label">
-                        <p class="label__text">-10%</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-                <div class="section__item__discounts section__item">
-                    <div class="label">
-                        <p class="label__text">-10%</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-                <div class="section__item__discounts section__item">
-                    <div class="label">
-                        <p class="label__text">-10%</p>
-                    </div>
-                    <div class="pict">
-                        <a class="pict__link link" href="#">
-                            <img class="section__pict img" src="shoes.jpg" alt="туфли">
-                        </a>
-                    </div>
-                    <h5 class="item__title">Labuten-lady</h5>
-                    <p class="item__cost">35 000 р.</p>
-                    <form class="form" method="post">
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__basket img" src="iconBasket.svg" alt="иконка корзины">в корзину
-                        </button>
-                        <button class="basket__button form__button" type="submit">
-                            <img class="section__reset img" src="iconReset.svg" alt="иконка ресет">
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </main>
-    </div>
+        </nav>
+        <div class="aside__baner">
+            <img class="img" src="img/top_20.jpg" alt="топ 20">
+            <img class="img" src="img/top_reclama.jpg" alt="топ">
+        </div>
+    </aside>
 </div>
 <!--Футер-->
 <footer class="footer">
 <!--Логотип-->
-    <div class="footer__contetent">
-        <div class="footer__logo logo">
-            <a class="logo__link link" href="index.html">
-                <img class="logo__link__img img" src="img/mainLogo.svg" alt="логотип компании"/>
-            </a>
-        </div>
+    <div class="footer__logo logo">
+        <a class="logo__link link" href="index.html">
+            <img class="logo__link__img img" src="img/mainLogo.svg" alt="логотип компании"/>
+        </a>
+    </div>
 <!--Главное меню футера-->
-        <nav class="footer__main__menu main__menu">
-            <ul class="footer__menu menu__main menu">
-                <li class="footer__menu__tab menu__tab">
-                    <h3 class="menu__title ">Меню</h3>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="index.html">Главная</a>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="catalogue.html">Каталог</a>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="gallery.html">Галерея</a>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="stock.html">Акции</a>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="contacts.html">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="footer__menu">
+        <h3 class="footer__menu__title ">Меню</h3>
+        <ul class="footer__menu__ul menu__main menu">
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="index.html">Главная</a>
+            </li>
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="catalogue.html">Каталог</a>
+            </li>
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="gallery.html">Галерея</a>
+            </li>
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="stock.html">Акции</a>
+            </li>
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="contacts.html">Контакты</a>
+            </li>
+        </ul>
+    </div>
 <!--Способы оплаты-->
-        <nav class="footer__main__menu main__menu">
-            <ul class="footer__menu menu__main menu">
-                <li class="footer__menu__tab menu__tab">
-                    <h3 class="menu__title ">Способы оплаты</h3>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="index.html">Наличными</a>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="pay.html">Visa или Mastercard</a>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <a class="menu__item link" href="pay.html">В кредит</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="footer__menu">
+        <h3 class="footer__menu__title ">Способы оплаты</h3>
+        <ul class="footer__menu__ul menu__main menu">
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="index.html">Наличными</a>
+            </li>
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="pay.html">Visa или Mastercard</a>
+            </li>
+            <li class="footer__menu__tab menu__main__tab">
+                <a class="menu__item link" href="pay.html">В кредит</a>
+            </li>
+        </ul>
+    </div>
 <!--Контактная информация-->
-        <nav class="footer__main__menu main__menu">
-            <ul class="footer__menu menu__main menu">
-                <li class="footer__menu__tab menu__tab">
-                    <h3 class="menu__title ">Контактная информация</h3>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <address class="menu__item">Телефон: 8(499) 654-98-79</address>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <address class="menu__item">E-mail: info@nalabten.ah</address>
-                </li>
-                <li class="footer__menu__tab menu__tab">
-                    <address class="menu__item">Адрес: г. Москва Фантастический проезд д.234</address>
-                </li>
-            </ul>
-        </nav>
-        <div class="copyright">
-            <p class="copyright__text">&copy; Nalabuten.ah 2017</p>
-        </div>
+    <div class="footer__menu">
+        <h3 class="footer__menu__title ">Контактная информация</h3>
+        <ul class="footer__menu__ul menu__main menu">
+            <li class="footer__menu__tab menu__tab">
+                <address class="footer__menu__address">
+                    <a class="header-main__link link" href="#">8(800)684-55-94</a>
+                </address>
+            </li>
+            <li class="footer__menu__tab menu__tab">
+                <address class="footer__menu__address">
+                    <a class="header-main__link link" href="#">info@nalabuten.ah</a>
+                </address>
+            </li>
+            <li class="footer__menu__tab menu__tab">
+                <p class="footer__menu__address">Адрес: г. Москва Фантастический проезд д.234</p>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <small class="copyright__text">&copy; Nalabuten.ah 2017</small>
     </div>
 </footer>
 </body>
